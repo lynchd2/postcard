@@ -18,7 +18,7 @@ and a valid email address, but they may leave the phone number part
 blank. If a customer inputs all valid information, a flash message is
 displayed at the top of the page stating that a confirmation email has been sent.
 If not, a flash message is displayed detailing to enter a valid email address
-and enter a name present.
+and to enter a name.
 
 ##Finding the Code
 The HTML form page can be found in app/views/users/index.html.erb
