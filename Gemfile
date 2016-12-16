@@ -26,6 +26,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'faker'
 gem "validates_email_format_of"
 gem "letter_opener", :group => :development
+gem "figaro"
 
 
 
