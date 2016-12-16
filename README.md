@@ -1,8 +1,10 @@
 # Welcome to the ProfessionalPainters repo
 
+###The application is built on Ruby on Rails using a RESTful approach.
+
 Check out the live demo [here](https://whispering-eyrie-38262.herokuapp.com/users)
 
-##The application is built on Ruby on Rails using a RESTful approach.
+
 
 ##How it Works:
 
@@ -20,5 +22,6 @@ and enter a name present.
 
 ##Finding the Code
 The HTML form page can be found in app/views/users/index.html.erb
+
 The CSS can be found in app/assets/stylesheets/application.scss
 
