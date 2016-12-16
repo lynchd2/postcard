@@ -1,25 +1,24 @@
-# README
+# Welcome to the ProfessionalPainters repo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Check out the live demo [here](https://whispering-eyrie-38262.herokuapp.com/users)
 
-Things you may want to cover:
+##The application is built on Ruby on Rails using a RESTful approach.
 
-* Ruby version
+##How it Works:
 
-* System dependencies
+The website is a sample landing page for receiving estimates for a painting business.
+To prove that a confirmation email as well as an estimate request email
+works, both emails are sent to the same email address that is typed on 
+the landing page. Emails are usually sent within sixty seconds.
 
-* Configuration
+A customer MUST input a name(at least one character long)
+and a valid email address, but they may leave the phone number part
+blank. If a customer inputs all valid information, a flash message is
+displayed at the top of the page stating that a confirmation email has been sent.
+If not, a flash message is displayed detailing to enter a valid email address
+and enter a name present.
 
-* Database creation
+##Finding the Code
+The HTML form page can be found in app/views/users/index.html.erb
+The CSS can be found in app/assets/stylesheets/application.scss
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# postcard
