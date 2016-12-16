@@ -99,6 +99,6 @@ Rails.application.configure do
     # Rails also needs to know where your app is
     #   located to properly configure sending of emails
     config.action_mailer.default_url_options = {
-      :host => 'https://thekithub.herokuapp.com/',
+      :host => 'https://whispering-eyrie-38262.herokuapp.com/',
     }
 end
