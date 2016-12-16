@@ -1,0 +1,85 @@
+
+<div class="container-fluid">
+	<div class="container-fluid page-header painters-header">
+
+		<div class="TEST">
+
+			<div class="row">
+			<%= image_tag("red-brush.jpg", class: "img-responsive red-brush-image") %>
+				<p class="col-md-3 col-xs-3"> </p>
+				<p class="col-md-4 col-xs-4 professional-word"><span class="red-color">PRO</span>FESSIONAL</p>
+				<p class="col-md-3 col-xs-4 number-to-call">Call <span class="red-color">555-123-4567</span></p>
+				<p class="col-md-2 col-xs-1"></p>
+			</div>
+		</div>
+		<div class="row">
+			<p class="col-md-3 col-xs-3"></p>
+			<p class="col-md-4 col-xs-4 painters-word">PAINTERS</p>
+			<p class="col-md-3 col-xs-3"></p>
+			<p class="col-md-2 col-xs-2"></p>
+		</div>
+	</div>
+	<div class="form col-md-12">
+		<%= image_tag("home.jpg", class: "home-image") %>
+		<div class="center-form-image">
+			<p class="text-center catch-1">
+				<span class="red-color">PROFESSIONAL</span> PAINTERS
+			</p>
+			<p class="text-center catch-2">
+				OF LARGO, CLEARWATER, TAMPA
+			</p>
+			<hr class="form-line-break"></hr>
+			<p class="text-center catch-3">We Care About More Than Paint!</p></br>
+			<div class="promo-section">
+				<p class="offer-1">SCHEDULE YOUR FREE ESTIMATE</p>
+				<p class="offer-1">TO REDEEM PROMO CODE FOR</p>
+				<p class="offer-2">$150 OFF</p>
+				<p class="offer-3">ANY JOB OF $3000 OR MORE!</p>
+			</div>
+			<div class="text-center">
+			<%= form_for @user do |f| %>
+			  <div class="col-md-12 form-group form-inline">
+			  	<span>NAME</span> 
+	    			<%= f.text_field :name, class: "form-control name-field", placeholder: :Name %>
+			  </div>
+			  
+			  <div class="col-md-12 form-group form-inline">
+			  	<span>EMAIL</span>
+	    			<%= f.email_field :email, class: "form-control email-field", placeholder: :Email %>
+			  </div>
+
+			  <div class="col-md-12 form-group form-inline">
+			  	<span>PHONE</span>
+			    <%= f.text_field :phone_number, class: "form-control phone-field", placeholder: "Phone Number" %>
+			  </div>
+		  	<%= f.submit "SAVE $150", class: "btn save-button"%>
+		  	<% end %>
+			</div>
+		  <div class="text-center">
+		  </div>
+		  
+		 	<div class="checklist-information">
+		  	<div class="row text-center">
+					<div class="col-md-4"><div class="glyphicon glyphicon-ok-circle"></div>Quality Work</div>
+					<div class="col-md-4"><div class="glyphicon glyphicon-ok-circle"></div>Professional Painters</div>
+					<div class="col-md-4"><div class="glyphicon glyphicon-ok-circle"></div>Flexible Schedules</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="painter-information">
+	<p class="painter-title">Professional Painters</p>
+	<p class="bullet-points-title">Tackling Residential & Commercial Painting Projects</p>
+	<p><%= @faker_paragraph %></p></br>
+	<p class="bullet-points-title">Why Clients Choose To Hire Our Team: </p>
+	<p class="faker-bullet-point"><%= image_tag("blue-brush.jpg", class: "img-responsive display-blue-brush") %><span><%= @faker_bullet_point1 %></span></p>
+	<p class="faker-bullet-point"><%= image_tag("blue-brush.jpg", class: "img-responsive display-blue-brush") %><span><%= @faker_bullet_point2 %></span></p>
+	<p class="faker-bullet-point"><%= image_tag("blue-brush.jpg", class: "img-responsive display-blue-brush") %><span><%= @faker_bullet_point3 %></span></p>
+	<p class="faker-bullet-point"><%= image_tag("blue-brush.jpg", class: "img-responsive display-blue-brush") %><span><%= @faker_bullet_point4 %></span></p>	<p class="faker-bullet-point"><%= image_tag("blue-brush.jpg", class: "img-responsive display-blue-brush") %><span><%= @faker_bullet_point5 %></span></p>
+	<p class="faker-bullet-point"><%= image_tag("blue-brush.jpg", class: "img-responsive display-blue-brush") %><span><%= @faker_bullet_point6 %></span></p></br>
+	<p><%= @faker_paragraph2 %></p>
+</div>
+<div class="free-estimate-banner">
+	<p class="text-center free-estimate-contact">SCHEDULE YOUR FREE ESTIMATE! <span class="contact-phone-number">555-123-4567</span></p>
+</div>
